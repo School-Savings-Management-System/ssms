@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-WF1G53P56K"></script>
+    <!--
+      Google tag (gtag.js) — Consent Mode v2 (PDPA privacy by default).
+      The gtag.js script itself is NOT loaded here. It is injected dynamically
+      by src/lib/cookieConsent.ts ONLY after the user grants analytics consent.
+      Until then every storage category stays 'denied'.
+    -->
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-WF1G53P56K');
+      gtag('consent', 'default', {
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+        analytics_storage: 'denied',
+        wait_for_update: 500,
+      });
     </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -24,8 +32,8 @@
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:site" content="@lovable_dev" />
     <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    <script type="module" crossorigin src="/ssms/assets/index-Dvc6gzbw.js"></script>
-    <link rel="stylesheet" crossorigin href="/ssms/assets/index-DKIQVmMW.css">
+    <script type="module" crossorigin src="/ssms/assets/index-2fhxHA0K.js"></script>
+    <link rel="stylesheet" crossorigin href="/ssms/assets/index-BAi8HWen.css">
   </head>
 
   <body>
